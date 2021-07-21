@@ -16,7 +16,7 @@ source:
 build:
   ## Jags dependency not availble on windows.
   ## OSX build currently disabled due to problems linking to jags
-  skip: true  # [not linux]
+  skip: true
   number: 0
   rpaths:
     - lib/R/lib/
@@ -55,6 +55,8 @@ requirements:
     - r-rjags
     - r-runjags
     - r-scales
+    - r-bayestools
+    - r-ggplot2
 
   run:
     - jags
@@ -71,6 +73,8 @@ requirements:
     - r-rjags
     - r-runjags
     - r-scales
+    - r-bayestools
+    - r-ggplot2
 
 test:
   commands:
