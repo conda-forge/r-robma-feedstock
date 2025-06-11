@@ -1,4 +1,4 @@
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RoBMA_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RoBMA/RoBMA_{{ version }}.tar.gz
-  sha256: ecd34f28ce0119cb6adb46d580e234fcd365b008a9d85f20641bdbcf983e5776
+  sha256: 6f4a70aabde224caffaed4b87b2fd8239921e93f091b9cedeb76b798e9762d30
 
 build:
   ## Jags dependency not availble on windows.
