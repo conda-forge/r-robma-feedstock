@@ -7,7 +7,7 @@ Home: https://fbartos.github.io/RoBMA/
 
 Package license: GPL-3.0-only
 
-Summary: A framework for estimating ensembles of meta-analytic models (assuming either presence or absence of the effect, heterogeneity, and publication bias) and using Bayesian model averaging to combine them. The ensembles use Bayes factors to test for the presence or absence of the individual components (e.g., effect vs. no effect) and model-averages parameter estimates based on posterior model probabilities (Maier, Bartoš & Wagenmakers, 2020, <doi:10.31234/osf.io/u4cns>). The user can define a wide range of non-informative or informative priors for the effect size, heterogeneity, and weight functions. The package provides convenient functions for summary, visualizations, and fit diagnostics.
+Summary: A framework for Bayesian meta-analysis, including model estimation, prior specification, model comparison, prediction, summaries, visualizations, and diagnostics. The package fits single and model-averaged meta-analytic, meta-regression, multilevel, publication bias adjusted, and generalized linear mixed models The model-averaged meta-analytic models combine competing models based on their predictive performance, weight inference by posterior model probabilities, and test model components using Bayes factors (e.g., effect vs. no effect; Bartoš et al., 2022, <doi:10.1002/jrsm.1594>; Maier, Bartoš & Wagenmakers, 2022, <doi:10.1037/met0000405>; Bartoš et al., 2025, <doi:10.1037/met0000737>). Users can specify flexible prior distributions for effect sizes, heterogeneity, publication bias (including selection models and PET-PEESE), and moderators.
 
 Current build status
 ====================
