@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "4.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RoBMA_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RoBMA/RoBMA_{{ version }}.tar.gz
-  sha256: 9fc78da8b60c0b8f86e14fd9529dabe3c4e1ba974e9c9e9d3ca622a3fa4763ce
+  sha256: 57a25c04d96c5317d59be6032dca2f7d692d4278b9e7310951cc2424ce04d878
 
 build:
   ## Jags dependency not availble on windows.
@@ -83,17 +83,9 @@ test:
 about:
   home: https://fbartos.github.io/RoBMA/
   license: GPL-3.0-only
-  summary: "A framework for Bayesian meta-analysis, including model estimation, prior specification,
-    model comparison, prediction, summaries, visualizations, and diagnostics. The package
-    fits single and model-averaged meta-analytic, meta-regression, multilevel, publication
-    bias adjusted, and generalized linear mixed models The model-averaged meta-analytic
-    models combine competing models based on their predictive performance, weight inference
-    by posterior model probabilities, and test model components using Bayes factors
-    (e.g., effect vs. no effect; Barto\u0161 et al., 2022, <doi:10.1002/jrsm.1594>;
-    Maier, Barto\u0161 & Wagenmakers, 2022, <doi:10.1037/met0000405>; Barto\u0161 et
-    al., 2025, <doi:10.1037/met0000737>). Users can specify flexible prior distributions
-    for effect sizes, heterogeneity, publication bias (including selection models and
-    PET-PEESE), and moderators."
+  summary: "A framework for Bayesian meta-analysis, including model estimation, prior specification, model comparison, prediction, summaries, visualizations, and diagnostics. The package fits single and model-averaged meta-analytic, meta-regression, multilevel, publication bias adjusted, and generalized linear mixed models
+    The model-averaged meta-analytic models combine competing models based on their predictive performance, weight inference by posterior model probabilities, and test model components using Bayes factors (e.g., effect vs. no effect; Bartoš et al., 2022, <doi:10.1002/jrsm.1594>; Maier, Bartoš & Wagenmakers, 2022, <doi:10.1037/met0000405>;
+    Bartoš et al., 2025, <doi:10.1037/met0000737>). Users can specify flexible prior distributions for effect sizes, heterogeneity, publication bias (including selection models and PET-PEESE), and moderators."
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
